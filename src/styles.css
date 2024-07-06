@@ -1,0 +1,102 @@
+/* styles.css */
+
+body {
+  background-color: #202124; /* Fondo oscuro */
+  color: #ffffff; /* Texto blanco */
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Centrar verticalmente en la pantalla */
+  margin: 0;
+}
+
+.todo-container {
+  text-align: center;
+  max-width: 800px; /* Ancho máximo del contenedor */
+  padding: 40px; /* Aumentamos el padding para hacer más grande el contenedor */
+  background-color: #2c2f33; /* Fondo más oscuro para el contenedor de tareas */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  color: #ffffff;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.input-tarea {
+  flex: 1; /* Ocupa todo el espacio restante */
+  padding: 15px; /* Aumentamos el padding para hacer más grande el input */
+  margin-right: 10px;
+  border: none;
+  background-color: #3e4147; /* Fondo del input */
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 16px; /* Tamaño de fuente */
+}
+
+.input-tarea::placeholder {
+  color: #a0a0a0; /* Color del placeholder */
+}
+
+.boton-agregar {
+  padding: 15px 30px; /* Aumentamos el padding para hacer más grande el botón */
+  background-color: #4caf50; /* Verde para el botón de agregar */
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 16px; /* Tamaño de fuente */
+}
+
+.boton-agregar:hover {
+  background-color: #45a049; /* Color más oscuro al hacer hover */
+}
+
+.lista-tareas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tarea {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tarea .tarea-contenido {
+  flex: 1;
+  padding: 15px; /* Aumentamos el padding para hacer más grande el contenido de la tarea */
+  background-color: #ffffff; /* Fondo blanco para cada tarea */
+  border-radius: 5px;
+  color: #000000; /* Color de texto negro */
+  font-weight: bold; /* Texto en negrita */
+  font-size: 16px; /* Tamaño de fuente */
+}
+
+.tarea button {
+  background-color: #f44336; /* Rojo para el botón de borrar */
+  color: #ffffff;
+  border: none;
+  padding: 15px; /* Aumentamos el padding para hacer más grande el botón */
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 16px; /* Tamaño de fuente */
+}
+
+.tarea button:hover {
+  background-color: #df332a; /* Color más oscuro al hacer hover */
+}
